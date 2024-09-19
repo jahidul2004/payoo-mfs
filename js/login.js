@@ -8,9 +8,14 @@ document
 
         const pin = document.getElementById("pin").value;
 
-        if (phoneNumber === "01878640770" && pin === "1234") {
+        if (phoneNumber === "0187" && pin === "1234") {
             window.location.href = "home.html";
         } else {
             alert("Wrong credentials");
         }
     });
+
+document.getElementById("forgot").addEventListener("click", function () {
+    document.getElementById("show-pass").innerText =
+        "Phone is:0187\nPin is:1234";
+});
