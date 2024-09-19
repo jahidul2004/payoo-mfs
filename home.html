@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <!-- Daisy UI -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Daisu UI -->
+    </head>
+    <body>
+        <main class="flex justify-center pt-5">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                    <div class="artboard artboard-demo phone-1">
+                        <!-- Avialable balance -->
+                        <div class="mt-10">
+                            <div class="stats shadow">
+                                <div class="stat">
+                                    <div class="stat-value">
+                                        <h2 id="money-amount">0000</h2>
+                                    </div>
+                                    <div class="stat-desc">
+                                        Avialablble balance
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <!-- Avilable balance -->
+
+                        <!-- User action button -->
+                        <div>
+                            <button id="add-money" class="btn btn-lg">
+                                Add Money
+                            </button>
+                            <button id="cash-out" class="btn btn-lg">
+                                Cash out
+                            </button>
+                        </div>
+                        <!-- <div class="divider"></div> -->
+                        <!-- User action button -->
+
+                        <!-- Add money form -->
+                        <form id="add-out-form" class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter your amount"
+                                    class="input input-bordered"
+                                    required
+                                    id="amount"
+                                />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input
+                                    type="password"
+                                    placeholder="Enter your pin"
+                                    class="input input-bordered"
+                                    required
+                                    id="pin"
+                                />
+                            </div>
+                            <!-- <div class="form-control mt-6">
+                                <button id="add-money" class="btn btn-primary">Add Money</button>
+                            </div> -->
+                        </form>
+                        <!-- Add money form -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="js/home.js"></script>
+    </body>
+</html>
